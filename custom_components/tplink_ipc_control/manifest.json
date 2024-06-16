@@ -1,7 +1,7 @@
 {
   "domain": "tplink_ipc_control",
   "name": "TPLink IPC Control",
-  "codeowners": ["@xiaodong-lx", "@likacix"],
+  "codeowners": ["@xiaodong-lx", "@likaci"],
   "documentation": "https://github.com/xiaodong-lx/tplink-ipc-control",
   "issue_tracker": "https://github.com/xiaodong-lx/tplink-ipc-control/issues",
   "integration_type": "service",
