@@ -1,5 +1,6 @@
 set_lens_mask_state:
   name: "Set Lens Mask State"
+  description: "Set Lens Mask State"
   fields:
     ipc_url:
       name: "IPC Url"
