@@ -1,0 +1,30 @@
+set_lens_mask_state:
+  name: "Set Lens Mask State"
+  fields:
+    ipc_url:
+      name: "IPC Url"
+      required: true
+      default: "http://192.168.0.131"
+      selector:
+        text:
+    username:
+      name: "Username"
+      required: true
+      default: "admin"
+      selector:
+        text:
+    password:
+      name: "Password"
+      required: true
+      selector:
+        text:
+    lens_mask_state:
+      name: "Lens Mask State"
+      required: true
+      default: "off"
+      example: "off"
+      selector:
+        select:
+          options:
+            - "off"
+            - "on"

@@ -1,0 +1,11 @@
+{
+  "domain": "tplink_ipc_control",
+  "name": "TPLink IPC Control",
+  "codeowners": ["@xiaodong-lx", "@likacix"],
+  "documentation": "https://github.com/xiaodong-lx/tplink-ipc-control",
+  "issue_tracker": "https://github.com/xiaodong-lx/tplink-ipc-control/issues",
+  "integration_type": "service",
+  "iot_class": "local_push",
+  "version": "0.1.0",
+  "requirements": ["requests==2.31.0", "rsa==4.9"]
+}
