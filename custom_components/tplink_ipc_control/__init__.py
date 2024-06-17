@@ -1,16 +1,15 @@
 from . mipcc_451 import *
-import voluptuous as vol
 
 DOMAIN = "tplink_ipc_control"
 
 ATTR_IPC_URL = "ipc_url"
-DEFAULT_IPC_URL = "http://"
+DEFAULT_IPC_URL = ""
 
 ATTR_USERNAME = "username"
 DEFAULT_USERNAME = "admin"
 
 ATTR_PASSWORD = "password"
-DEFAULT_PASSWORD = "password"
+DEFAULT_PASSWORD = ""
 
 ATTR_SET_LENS_MASK_STATE = "lens_mask_state"
 DEFAULT_SET_LENS_MASK_STATE = ""

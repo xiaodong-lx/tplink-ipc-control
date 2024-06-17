@@ -3,7 +3,6 @@
 
 import base64
 import json
-import sys
 from urllib.parse import unquote
 
 import requests
@@ -83,24 +82,8 @@ def rsa_encrypt(string, pubkey):
 
 
 def get_stok(url, username, password):
-    # get key nonce
-    #print("-get rsa and nonce")
-    #j = post_data(url, json.dumps({"method": "do", "login": {}}))
-    #key = unquote(j['data']['key'])
-    #nonce = str(j['data']['nonce'])
-    #print("rsa: ", key)
-    #print("nonce: ", nonce)
-
     # encrypt tp
-    print("--encrypt password by tp")
     tp_password = tp_encrypt(password)
-    #tp_password += ":" + nonce
-    print("tp_password: ", tp_password)
-
-    # rsa password
-    #print("--encrypt password by rsa")
-    #rsa_password = rsa_encrypt(tp_password, key)
-    #print("rsa_password: ", rsa_password)
 
     # login
     d = {
@@ -122,15 +105,3 @@ def post_data(base_url, data, stok=""):
     r = requests.post(url, data)
     print("response: ", str(r.status_code), " ", str(r.json()))
     return r.json()
-
-
-if __name__ == '__main__':
-    username = str(sys.argv[1])
-    password = str(sys.argv[2])
-    base_url = str(sys.argv[3])
-    data = str(sys.argv[4])
-    print("username: ", username)
-    print("password: ", password)
-    print("base_url: ", base_url)
-    print("data: ", data)
-    post_data(base_url, data, get_stok(base_url, username, password))
