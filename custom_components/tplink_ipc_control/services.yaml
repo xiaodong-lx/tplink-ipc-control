@@ -7,13 +7,16 @@ set_lens_mask_state:
       description: "IPC Url"
       required: true
       default: "http://192.168.2.89"
+      example: "http://192.168.2.89"
       selector:
         text:
+          type: url
     username:
       name: "Username"
       description: "Username"
       required: true
       default: "admin"
+      example: "admin"
       selector:
         text:
     password:
@@ -22,6 +25,7 @@ set_lens_mask_state:
       required: true
       selector:
         text:
+          type: password
     lens_mask_state:
       name: "Lens Mask State"
       description: "Lens Mask State"
