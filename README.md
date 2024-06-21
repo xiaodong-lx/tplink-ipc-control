@@ -5,9 +5,14 @@
 
 A simple custom component to control TPLink IPC.
 
+[![Open HACS](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=xiaodong-lx&repository=tplink-ipc-control&category=integration)
+
 ## Usage
 
-1. Add integration `TPLink IPC Control`.
+1. Add integration `TPLink IPC Control`. 
+
+    [![Add Integration](https://my.home-assistant.io/badges/config_flow_start.svg)](https://my.home-assistant.io/redirect/config_flow_start?domain=tplink_ipc_control)
+
 2. Use services with `ipc url`、`username` and `password`
 ````
 TPLink IPC Control: Command (tplink_ipc_control.command)
