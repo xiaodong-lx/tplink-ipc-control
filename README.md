@@ -7,12 +7,8 @@ A simple custom component to control TPLink IPC.
 
 ## Usage
 
-1. Add entry in your `configuration.yaml`.
-````
-tplink_ipc_control:
-````
-
-2. Use service with `ipc url`、`username` and `password`
+1. Add integration `TPLink IPC Control`.
+2. Use services with `ipc url`、`username` and `password`
 ````
 TPLink IPC Control: Command (tplink_ipc_control.command)
 TPLink IPC Control: Set Lens Mask State (tplink_ipc_control.set_lens_mask_state)
