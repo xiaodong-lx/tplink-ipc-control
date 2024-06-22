@@ -5,7 +5,7 @@
   "config_flow": true,
   "documentation": "https://github.com/xiaodong-lx/tplink-ipc-control",
   "integration_type": "service",
-  "iot_class": "local_push",
+  "iot_class": "local_polling",
   "issue_tracker": "https://github.com/xiaodong-lx/tplink-ipc-control/issues",
   "requirements": ["requests==2.31.0", "rsa==4.9"],
   "single_config_entry": true,
