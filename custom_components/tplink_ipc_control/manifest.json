@@ -8,6 +8,5 @@
   "iot_class": "local_polling",
   "issue_tracker": "https://github.com/xiaodong-lx/tplink-ipc-control/issues",
   "requirements": ["requests==2.31.0", "rsa==4.9"],
-  "single_config_entry": true,
-  "version": "0.1.3"
+  "version": "0.1.4"
 }
