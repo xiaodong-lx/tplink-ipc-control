@@ -2,9 +2,9 @@
     "config": {
         "abort": {
             "single_instance_allowed": "Only a single configuration is allowed."
+        },
+        "step": {
+            "user": {}
         }
-    },
-    "step": {
-        "user": {}
     }
 }
