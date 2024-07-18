@@ -76,10 +76,6 @@ command:
           options:
             - '{"method":"do","preset":{"goto_preset": {"id": "1"}}}'
             - '{"method":"do","preset":{"set_preset":{"name":"name","save_ptz":"1"}}}'
-            - '{"method":"do","motor":{"move":{"x_coord":"10","y_coord":"0"}}}'
-            - '{"method":"do","motor":{"movestep":{"direction":"0"}}}'
-            - '{"method":"do","motor":{"movestep":{"direction":"90"}}}'
-            - '{"method":"do","motor":{"stop":"null"}}'
             - '{"method":"do","motor":{"manual_cali":"null"}}'
             - '{"method":"set","led":{"config":{"enabled":"on"}}}'
             - '{"method":"set","lens_mask":{"lens_mask_info":{"enabled":"on"}}}'

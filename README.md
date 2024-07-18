@@ -28,21 +28,6 @@ TPLink IPC Control: Set Lens Mask State (tplink_ipc_control.set_lens_mask_state)
 // PTZ to preset position 转动到预置点
 {"method":"do","preset":{"goto_preset": {"id": "1"}}}
 
-// PTZ by coord 按坐标转动
-{"method":"do","motor":{"move":{"x_coord":"10","y_coord":"0"}}}
-
-// PTZ horizontal by step 水平步进
-{"method":"do","motor":{"movestep":{"direction":"0"}}}
-
-// PTZ vertical by step 垂直步进
-{"method":"do","motor":{"movestep":{"direction":"90"}}}
-
-// Stop PTZ 停止步进
-{"method":"do","motor":{"stop":"null"}}
-
-// Reset PTZ 云台重置
-{"method":"do","motor":{"manual_cali":"null"}}
-
 // Lens mask 镜头遮蔽
 {"method":"set","lens_mask":{"lens_mask_info":{"enabled":"on"}}}
 
@@ -94,7 +79,6 @@ TPLink IPC Control: Set Lens Mask State (tplink_ipc_control.set_lens_mask_state)
 // 4096-4104 依次为 你好欢迎光临 ..... 
 {"method":"do","greeter":{"test_audio":{"force":"1"}}} 
 {"method":"do","greeter":{"test_audio":{"id":"4096","force":"1"}}} 
-
 
 // Set enter or leave greetings 设置进入或离开语音
 {"method":"set","greeter":{"chn1_greeter_audio":{"enter_audio_id":"0"}}}
