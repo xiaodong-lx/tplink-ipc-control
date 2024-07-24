@@ -13,13 +13,15 @@ A simple custom component to control TPLink IPC.
 
     [![Add Integration](https://my.home-assistant.io/badges/config_flow_start.svg)](https://my.home-assistant.io/redirect/config_flow_start?domain=tplink_ipc_control)
 
-2. Use services with `ipc url`、`username` and `password`
-````
-TPLink IPC Control: Command (tplink_ipc_control.command)
-TPLink IPC Control: Set Lens Mask State (tplink_ipc_control.set_lens_mask_state)
-````
+2. Use services with `ipc url`、`username` and `password` in [`automations`](https://www.home-assistant.io/docs/automation/) or [`developer-tools/service`](https://my.home-assistant.io/redirect/developer_services)
+
+- `TPLink IPC Control: Command` ([tplink_ipc_control.command](https://my.home-assistant.io/redirect/developer_call_service/?service=tplink_ipc_control.command))
+- `TPLink IPC Control: Set Lens Mask State` ([tplink_ipc_control.set_lens_mask_state](https://my.home-assistant.io/redirect/developer_call_service/?service=tplink_ipc_control.set_lens_mask_state))
+
 
 ## Command Examples
+
+### `Do`/`Set` methods
 
 ```json
 // Add PTZ preset position 添加预置点
@@ -85,6 +87,40 @@ TPLink IPC Control: Set Lens Mask State (tplink_ipc_control.set_lens_mask_state)
 {"method":"set","greeter":{"chn1_greeter_audio":{"leave_audio_id":"4104"}}}
 ```
 ref: [likaci/mercury-ipc-control/README.md](https://raw.githubusercontent.com/likaci/mercury-ipc-control/bd72a9e195a88d490a6188d6888aeb9c729083b2/README.md)
+
+----
+
+### `Get` methods
+
+````json
+// 视频
+{"method":"get","video":{"name":["main","minor"]}}
+
+// 网络设置
+{"method":"get","network":{"name":["wan_status"]}}
+
+// 系统设置
+{"method":"get","system":{"name":["clock_status","sys"]}}
+
+// 设备信息
+{"method":"get","device_info":{"name":["basic_info","info"]}}
+
+// TP-LINK 服务
+{"method":"get","cloud_config":{"name":["new_firmware","upgrade_info","bind"]}}
+
+// 网络协议
+{"method":"get","protocol":{"name":["wan","static","dhcp"]}}
+
+// 存储信息
+{"method":"get","harddisk_manage":{"name":["harddisk","video","picture"],"table":["hd_info"]}}
+````
+
+----
+
+### References
+
+-  [`str.json`](reference/str.js)
+-  [`uci.json`](reference/uci.js)
 
 ## Thanks
 
